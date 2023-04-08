@@ -1,7 +1,7 @@
 #Blackout Linux (Fedora Edition) by JDanielDBC
 # ~/.bashrc
 #
-ascii-image-converter ~/Pictures/'Blackout Linux logo nano nano.png' -C
+ascii-image-converter ~/Pictures/blackout-logo/Logo/res/'Blackout Linux logo nano nano.png' -C
 printf "\n              ~Blackout Linux~\n"
 echo $USER @ $(hostname)
 cat /sys/devices/virtual/dmi/id/product_version
@@ -67,6 +67,12 @@ alias la='ls -A'
 alias l='ls -CF'
 
 #some aliases by Blackout installer
+alias gtk4-firefox='curl -s -o- https://raw.githubusercontent.com/rafaelmardojai/firefox-gnome-theme/master/scripts/install-by-curl.sh | bash'
+alias sine='echo "ffplay -f lavfi -i "sine=frequency=1000" -nodisp" '
+alias ywav='youtube-dl --audio-format wav -x --audio-quality 0'
+alias yF='youtube-dl -F'
+
+
 alias g=gnome-text-editor
 alias myip="curl http://ipecho.net/plain; echo"
 alias recomp='make clean && make'
